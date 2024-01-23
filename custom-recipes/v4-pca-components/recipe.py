@@ -20,7 +20,7 @@ from sklearn.preprocessing import StandardScaler
 # Roles need to be defined in recipe.json, in the inputRoles and outputRoles fields.
 
 
-input_dataset_name = get_input_names_for_role('input')[0]
+input_dataset_name = get_input_names_for_role('input')[0] ##
 input_dataset = dataiku.Dataset(input_dataset_name)
 dataset_pca_df = input_dataset.get_dataframe()
 number_components = get_recipe_config()['number of components']
